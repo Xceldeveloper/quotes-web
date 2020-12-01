@@ -4,7 +4,7 @@
       <v-toolbar-title>XcelQuotes</v-toolbar-title>
     </v-toolbar>
     <v-row class="fill-height ma-0" align="center" justify="center">
-      <div id="quote-wrapper" >
+      <v-card id="quote-wrapper" dark color="transparent">
         <span id="quote-for-day">Quote for the Day</span>
         <blockquote id="quote">
           <span class="q">"</span> {{ quote }} <span class="q">"</span>
@@ -12,7 +12,7 @@
         <span id="author">~ {{ author }}</span>
 
         <v-btn id="more-btn" outlined color="#fff" rounded small> More </v-btn>
-      </div>
+      </v-card>
     </v-row>
     <span class="acess">
       Powered by
@@ -49,7 +49,6 @@ export default {
   height: 100%;
   overflow: auto;
   background: #000;
-  position: relative;
 }
 .fabx {
   position: fixed;
@@ -104,13 +103,11 @@ a {
 }
 
 #more-btn {
- 
   margin: 35px 0px;
 }
 
-.q{
+.q {
   font-size: 20px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
- 
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 </style>
