@@ -1,9 +1,9 @@
 <template>
   <div id="wrapperx">
     <v-toolbar dark absolute width="100%" color="transparent" dense>
-      <v-toolbar-title>XcelQuote</v-toolbar-title>
+      <v-toolbar-title>XcelQuotes</v-toolbar-title>
     </v-toolbar>
-    <v-row class="fill-height" justify="center" align="center">
+    <v-row class="fill-height ma-0" align="center" justify="center">
       <div id="quote-wrapper" elevation="0">
         <span id="quote-for-day">Quote for the Day</span>
         <blockquote id="quote">
