@@ -1,5 +1,9 @@
 # xcelquotes
 
+[Demo](https://xcelquotes.netlify.app/)
+
+[Developer's website](https://xceldeveloper.com)
+
 ## Build Setup
 
 ```bash
