@@ -33,9 +33,11 @@ export default {
     this.$axios
       .$get("https://zenquotes.io/api/today")
       .then((data) => {
+         console.log(JSON.stringify(data, 2, null));
+         
         this.quote = data[0].q;
         this.author = data[0].a;
-        console.log(JSON.stringify(data, 2, null));
+       
       })
       .catch((err) => {
         console.log(err);
