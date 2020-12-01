@@ -4,14 +4,14 @@
       <v-toolbar-title>XcelQuotes</v-toolbar-title>
     </v-toolbar>
     <v-row class="fill-height ma-0" align="center" justify="center">
-      <div id="quote-wrapper" elevation="0">
+      <div id="quote-wrapper" >
         <span id="quote-for-day">Quote for the Day</span>
         <blockquote id="quote">
           <span class="q">"</span> {{ quote }} <span class="q">"</span>
         </blockquote>
         <span id="author">~ {{ author }}</span>
 
-        <v-btn id="more-btn" outlined color="#fff" rounded small>More</v-btn>
+        <v-btn id="more-btn" outlined color="#fff" rounded small> More </v-btn>
       </div>
     </v-row>
     <span class="acess">
@@ -75,13 +75,16 @@ a {
 
 #quote-wrapper {
   width: 100%;
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
   height: auto;
   padding: 35px;
+  display: block;
 }
 
 #quote {
   color: #fff;
-  font-weight: bold;
   font-size: 18px;
 }
 
@@ -101,7 +104,7 @@ a {
 }
 
 #more-btn {
-  display: block;
+ 
   margin: 35px 0px;
 }
 
